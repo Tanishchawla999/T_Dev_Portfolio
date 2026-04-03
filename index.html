@@ -1,238 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tanish Chawla — Software Developer</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanish Chawla — Mern Stack Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <canvas id="bg-canvas"></canvas>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-trail" id="cursorTrail"></div>
 
-</head>
-<body>
+    <!-- NAV -->
+    <nav>
+      <div class="nav-logo">TC.</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#game">Game</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
 
-<canvas id="bg-canvas"></canvas>
-<div class="cursor" id="cursor"></div>
-<div class="cursor-trail" id="cursorTrail"></div>
-
-<!-- NAV -->
-<nav>
-  <div class="nav-logo">TC.</div>
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#game">Game</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<!-- MOBILE NAV OVERLAY -->
-<div class="nav-mobile-overlay" id="mobileNav">
-  <a href="#home" class="mob-link">Home</a>
-  <a href="#skills" class="mob-link">Skills</a>
-  <a href="#projects" class="mob-link">Projects</a>
-  <a href="#game" class="mob-link">Game</a>
-  <a href="#contact" class="mob-link">Contact</a>
-</div>
-
-<!-- HERO -->
-<section id="home">
-  <div class="hero-left">
-    <div class="hero-tag">Available for hire</div>
-    <h1 class="hero-name">
-      Hi, I'm<br>
-      <span class="accent-word glitch" data-text="Tanish.">Tanish.</span>
-    </h1>
-    <div class="hero-subtitle">
-      Software Developer crafting modern web applications using cutting-edge technologies. From responsive frontends to RESTful APIs — I bring ideas to life with clean code and thoughtful design.
+    <!-- MOBILE NAV OVERLAY -->
+    <div class="nav-mobile-overlay" id="mobileNav">
+      <a href="#home" class="mob-link">Home</a>
+      <a href="#projects" class="mob-link">Projects</a>
+      <a href="#skills" class="mob-link">Skills</a>
+      <a href="#game" class="mob-link">Game</a>
+      <a href="#contact" class="mob-link">Contact</a>
     </div>
-    <div class="hero-btns">
-      <a href="#projects" class="btn btn-primary">View My Work</a>
-      <a href="#contact" class="btn btn-outline">Hire Me</a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat-item">
-        <div class="stat-num" data-target="5">0</div>
-        <div class="stat-label">Projects</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num" data-target="17">0</div>
-        <div class="stat-label">Technologies</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num" data-target="100">0</div>
-        <div class="stat-label">% Passion</div>
-      </div>
-    </div>
-  </div>
-  <div class="hero-right">
-    <div class="hero-card">
-      <div class="hero-card-glow"></div>
-      <div class="code-line"><span class="cm">// tanish.config.js</span></div>
-      <div class="code-line">&nbsp;</div>
-      <div class="code-line"><span class="kw">const</span> <span class="fn">developer</span> = {</div>
-      <div class="code-line">&nbsp;&nbsp;name: <span class="str">"Tanish Chawla"</span>,</div>
-      <div class="code-line">&nbsp;&nbsp;role: <span class="str">"Software Developer"</span>,</div>
-      <div class="code-line">&nbsp;&nbsp;location: <span class="str">"Pune, India"</span>,</div>
-      <div class="code-line">&nbsp;&nbsp;stack: [<span class="str">"React"</span>, <span class="str">"Node.js"</span>,</div>
-      <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Java"</span>, <span class="str">"Python"</span>],</div>
-      <div class="code-line">&nbsp;&nbsp;openTo: <span class="str">"new opportunities"</span>,</div>
-      <div class="code-line">&nbsp;&nbsp;coffee: <span class="num">Infinity</span></div>
-      <div class="code-line">};</div>
-      <div class="code-line">&nbsp;</div>
-      <div class="code-line"><span class="kw">export default</span> <span class="fn">developer</span>;<span class="typing-cursor"></span></div>
-    </div>
-  </div>
-  <div class="scroll-indicator">
-    <span>Scroll</span>
-    <div class="scroll-line"></div>
-  </div>
-</section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-header">
-    <div class="section-tag">// what I work with</div>
-    <h2 class="section-title">My <span class="highlight">Skills</span></h2>
-    <div class="divider"></div>
-  </div>
-  <div class="skills-grid" id="skillsGrid">
-    <!-- Skills injected by JS -->
-  </div>
-</section>
-
-<!-- CURRENTLY LEARNING -->
-<section id="learning" style="position:relative;z-index:2;">
-  <div style="max-width:1300px;margin:0 auto;padding:0 3rem 5rem;">
-    <div class="learning-header">
-      <span class="learning-label">⚡ Currently Learning</span>
-      <div class="learning-line"></div>
-    </div>
-    <div class="learning-pills" id="learningPills">
-      <!-- Injected by JS -->
-    </div>
-    <div class="learning-note">// actively studying & building projects with these</div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-header">
-    <div class="section-tag">// things I've built</div>
-    <h2 class="section-title">My <span class="highlight">Projects</span></h2>
-    <div class="divider"></div>
-  </div>
-  <div class="projects-grid" id="projectsGrid">
-    <!-- Projects injected by JS -->
-  </div>
-</section>
-
-<!-- GAME -->
-<section id="game" style="position:relative;z-index:2;">
-  <div class="section-header">
-    <div class="section-tag">// mini arcade</div>
-    <h2 class="section-title">Play <span class="highlight">Neon Snake</span></h2>
-    <div class="divider"></div>
-  </div>
-  <div style="max-width:620px;margin:0 auto;padding:0 1.2rem;">
-    <div class="game-wrapper">
-      <!-- Header -->
-      <div class="game-header">
-        <div class="game-title-area">
-          <span class="gtag">ARCADE</span>
-          <span class="game-name">NEON SNAKE</span>
+    <!-- HERO -->
+    <section id="home">
+      <div class="hero-left">
+        <div class="hero-tag">Available for hire</div>
+        <h1 class="hero-name">
+          Hi, I'm<br />
+          <span class="accent-word glitch" data-text="Tanish.">Tanish.</span>
+        </h1>
+        <div class="hero-subtitle">
+          Mern Stack Developer crafting modern web applications using
+          cutting-edge technologies. From responsive frontends to RESTful APIs —
+          I bring ideas to life with clean code and thoughtful design.
         </div>
-        <div class="game-scores">
-          <div class="score-box">
-            <div class="score-label">Score</div>
-            <div class="score-val" id="scoreDisplay">0</div>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Hire Me</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num" data-target="5">0</div>
+            <div class="stat-label">Projects</div>
           </div>
-          <div class="score-box">
-            <div class="score-label">Best</div>
-            <div class="score-val hi" id="hiDisplay">0</div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="17">0</div>
+            <div class="stat-label">Technologies</div>
           </div>
-          <div class="score-box">
-            <div class="score-label">Level</div>
-            <div class="score-val" id="levelDisplay">1</div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="100">0</div>
+            <div class="stat-label">% Passion</div>
           </div>
         </div>
       </div>
-
-      <!-- Arena -->
-      <div class="game-arena">
-        <canvas id="gameCanvas" width="400" height="400"></canvas>
-
-        <!-- Start Screen -->
-        <div class="game-overlay" id="startScreen">
-          <div class="overlay-icon">🐍</div>
-          <div class="overlay-title">NEON SNAKE</div>
-          <div class="overlay-sub">Guide the neon snake. Eat glowing orbs to grow. Don't hit walls or yourself!</div>
-          <button class="btn-game" id="startBtn">▶ START GAME</button>
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="hero-card-glow"></div>
+          <div class="code-line">
+            <span class="cm">// tanish.config.js</span>
+          </div>
+          <div class="code-line">&nbsp;</div>
+          <div class="code-line">
+            <span class="kw">const</span> <span class="fn">developer</span> = {
+          </div>
+          <div class="code-line">
+            &nbsp;&nbsp;name: <span class="str">"Tanish Chawla"</span>,
+          </div>
+          <div class="code-line">
+            &nbsp;&nbsp;role: <span class="str">"Mern Stack Developer"</span>,
+          </div>
+          <div class="code-line">
+            &nbsp;&nbsp;location: <span class="str">"Pune, India"</span>,
+          </div>
+          <div class="code-line">
+            &nbsp;&nbsp;stack: [<span class="str">"React"</span>,
+            <span class="str">"Node.js"</span>,
+          </div>
+          <div class="code-line">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="str"
+              >"Java"</span
+            >, <span class="str">"Express.js"</span>],
+          </div>
+          <div class="code-line">
+            &nbsp;&nbsp;openTo: <span class="str">"new opportunities"</span>,
+          </div>
+          <div class="code-line">
+            &nbsp;&nbsp;coffee: <span class="num">Infinity</span>
+          </div>
+          <div class="code-line">};</div>
+          <div class="code-line">&nbsp;</div>
+          <div class="code-line">
+            <span class="kw">export default</span>
+            <span class="fn">developer</span>;<span
+              class="typing-cursor"
+            ></span>
+          </div>
         </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
 
-        <!-- Game Over Screen -->
-        <div class="game-overlay hidden" id="gameOverScreen">
-          <div class="overlay-icon">💀</div>
-          <div class="overlay-title">GAME OVER</div>
-          <div class="overlay-score-big" id="finalScore">0</div>
-          <div class="overlay-sub" id="overMsg">Keep going — you'll beat it next time!</div>
-          <button class="btn-game" id="restartBtn">↺ PLAY AGAIN</button>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-header">
+        <div class="section-tag">// things I've built</div>
+        <h2 class="section-title">
+          My <span class="highlight">Projects</span>
+        </h2>
+        <div class="divider"></div>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Projects injected by JS -->
+      </div>
+    </section>
+
+    <!-- CURRENTLY LEARNING -->
+    <section id="learning" style="position: relative; z-index: 2">
+      <div style="max-width: 1300px; margin: 0 auto; padding: 0 3rem 5rem">
+        <div class="learning-header">
+          <span class="learning-label">⚡ Currently Learning</span>
+          <div class="learning-line"></div>
+        </div>
+        <div class="learning-pills" id="learningPills">
+          <!-- Injected by JS -->
+        </div>
+        <div class="learning-note">
+          // actively studying & building projects with these
         </div>
       </div>
+    </section>
 
-      <!-- Touch Controls -->
-      <div class="touch-controls show" id="touchControls">
-        <button class="touch-btn up"    id="btn-up">↑</button>
-        <button class="touch-btn left"  id="btn-left">←</button>
-        <button class="touch-btn down"  id="btn-down">↓</button>
-        <button class="touch-btn right" id="btn-right">→</button>
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-header">
+        <div class="section-tag">// what I work with</div>
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+        <div class="divider"></div>
       </div>
-
-      <!-- Footer tip -->
-      <div class="game-footer-tip">
-        <span class="desktop-tip">Use ← → ↑ ↓ arrow keys or WASD to move &nbsp;·&nbsp; ESC to pause</span>
-        <span class="mobile-tip">Tap the arrows above to move the snake</span>
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Skills injected by JS -->
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-header">
-    <div class="section-tag">// let's connect</div>
-    <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
-    <div class="divider"></div>
-  </div>
-  <div class="contact-card">
-    <div class="contact-headline">Have a project in mind?</div>
-    <p class="contact-sub">I'm currently open to new opportunities. Whether you have a question or just want to say hi — my inbox is always open!</p>
-    <div class="contact-info">
-      <a href="mailto:tanishchawla3132@gmail.com" class="contact-item">
-        <span class="contact-item-icon">✉</span>
-        tanishchawla3132@gmail.com
-      </a>
-      <a href="tel:+916206644930" class="contact-item">
-        <span class="contact-item-icon">📞</span>
-        +91 6206644930
-      </a>
-      <div class="contact-item">
-        <span class="contact-item-icon">📍</span>
-        Pune, India
+    <!-- GAME -->
+    <section id="game" style="position: relative; z-index: 2">
+      <div class="section-header">
+        <div class="section-tag">// mini arcade</div>
+        <h2 class="section-title">
+          Play <span class="highlight">Neon Snake</span>
+        </h2>
+        <div class="divider"></div>
       </div>
-    </div>
-    <a href="mailto:tanishchawla3132@gmail.com" class="btn btn-primary">Say Hello →</a>
-  </div>
-</section>
+      <div style="max-width: 620px; margin: 0 auto; padding: 0 1.2rem">
+        <div class="game-wrapper">
+          <!-- Header -->
+          <div class="game-header">
+            <div class="game-title-area">
+              <span class="gtag">ARCADE</span>
+              <span class="game-name">NEON SNAKE</span>
+            </div>
+            <div class="game-scores">
+              <div class="score-box">
+                <div class="score-label">Score</div>
+                <div class="score-val" id="scoreDisplay">0</div>
+              </div>
+              <div class="score-box">
+                <div class="score-label">Best</div>
+                <div class="score-val hi" id="hiDisplay">0</div>
+              </div>
+              <div class="score-box">
+                <div class="score-label">Level</div>
+                <div class="score-val" id="levelDisplay">1</div>
+              </div>
+            </div>
+          </div>
 
-<!-- FOOTER -->
-<footer>
-  <span>© Tanish Chawla — All rights reserved &nbsp;&nbsp; </span>
-</footer>
+          <!-- Arena -->
+          <div class="game-arena">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
 
-<script src="app.js"></script>
-</body>
+            <!-- Start Screen -->
+            <div class="game-overlay" id="startScreen">
+              <div class="overlay-icon">🐍</div>
+              <div class="overlay-title">NEON SNAKE</div>
+              <div class="overlay-sub">
+                Guide the neon snake. Eat glowing orbs to grow. Don't hit walls
+                or yourself!
+              </div>
+              <button class="btn-game" id="startBtn">▶ START GAME</button>
+            </div>
+
+            <!-- Game Over Screen -->
+            <div class="game-overlay hidden" id="gameOverScreen">
+              <div class="overlay-icon">💀</div>
+              <div class="overlay-title">GAME OVER</div>
+              <div class="overlay-score-big" id="finalScore">0</div>
+              <div class="overlay-sub" id="overMsg">
+                Keep going — you'll beat it next time!
+              </div>
+              <button class="btn-game" id="restartBtn">↺ PLAY AGAIN</button>
+            </div>
+          </div>
+
+          <!-- Touch Controls -->
+          <div class="touch-controls show" id="touchControls">
+            <button class="touch-btn up" id="btn-up">↑</button>
+            <button class="touch-btn left" id="btn-left">←</button>
+            <button class="touch-btn down" id="btn-down">↓</button>
+            <button class="touch-btn right" id="btn-right">→</button>
+          </div>
+
+          <!-- Footer tip -->
+          <div class="game-footer-tip">
+            <span class="desktop-tip"
+              >Use ← → ↑ ↓ arrow keys or WASD to move &nbsp;·&nbsp; ESC to
+              pause</span
+            >
+            <span class="mobile-tip"
+              >Tap the arrows above to move the snake</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-header">
+        <div class="section-tag">// let's connect</div>
+        <h2 class="section-title">
+          Get In <span class="highlight">Touch</span>
+        </h2>
+        <div class="divider"></div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-headline">Have a project in mind?</div>
+        <p class="contact-sub">
+          I'm currently open to new opportunities. Whether you have a question
+          or just want to say hi — my inbox is always open!
+        </p>
+        <div class="contact-info">
+          <a href="mailto:tanishchawla3132@gmail.com" class="contact-item">
+            <span class="contact-item-icon">✉</span>
+            tanishchawla3132@gmail.com
+          </a>
+          <a href="tel:+916206644930" class="contact-item">
+            <span class="contact-item-icon">📞</span>
+            +91 6206644930
+          </a>
+          <div class="contact-item">
+            <span class="contact-item-icon">📍</span>
+            Pune, India
+          </div>
+        </div>
+        <a href="mailto:tanishchawla3132@gmail.com" class="btn btn-primary"
+          >Say Hello →</a
+        >
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <span>© Tanish Chawla — All rights reserved &nbsp;&nbsp; </span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
 </html>

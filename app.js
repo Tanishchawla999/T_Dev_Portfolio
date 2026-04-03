@@ -117,17 +117,19 @@ const skills = [
   { icon: '🌐', name: 'HTML5', desc: 'Semantic markup, accessibility, SEO best practices', badge: 'Frontend' },
   { icon: '🎨', name: 'CSS3', desc: 'Flexbox, Grid, animations, responsive design', badge: 'Frontend' },
   { icon: '⚡', name: 'JavaScript', desc: 'DOM manipulation, async programming', badge: 'Language' },
-  { icon: '📱', name: 'React Native', desc: 'Mobile apps, component architecture, hooks', badge: 'Mobile' },
   { icon: '🟢', name: 'Node.js', desc: 'Express, REST APIs, backend development', badge: 'Backend' },
-  { icon: '🔄', name: 'N8N', desc: 'Workflow automation, API integrations', badge: 'Automation' },
   { icon: '🚂', name: 'ExpressJS', desc: 'Middleware, routing, API endpoints', badge: 'Backend' },
   { icon: '🗄️', name: 'SQL', desc: 'Queries, joins, database design, indexing', badge: 'Database' },
+  { icon: '🐳', name: 'Docker', desc: 'Containerization, images, Docker Compose', badge: 'DevOps' },
+  { icon: '🎨', name: 'Gsap', desc: 'CSS Animation', badge: 'Frontend' },
+  { icon: '🎨', name: 'Locomotive Scroll', desc: 'Scrolling Animation', badge: 'Frontend' },
+  { icon: '📱', name: 'React Native', desc: 'Mobile apps, component architecture, hooks', badge: 'Mobile' },
+  { icon: '🔄', name: 'N8N', desc: 'Workflow automation, API integrations', badge: 'Automation' },
   { icon: '☕', name: 'Java', desc: 'OOP, multithreading, JDBC', badge: 'Language' },
   { icon: '⚙️', name: 'C', desc: 'Memory management, pointers, system programming', badge: 'Language' },
   { icon: '🔷', name: 'C# / .NET', desc: 'ASP.NET, Entity Framework', badge: 'Backend' },
   { icon: '🐍', name: 'Python', desc: 'Data analysis, automation', badge: 'Language' },
   { icon: '📝', name: 'WordPress', desc: 'Custom themes, plugins, WooCommerce', badge: 'CMS' },
-  { icon: '🐳', name: 'Docker', desc: 'Containerization, images, Docker Compose', badge: 'DevOps' },
   { icon: '📋', name: 'Jira', desc: 'Agile workflows, sprint planning, issue tracking', badge: 'Tools' },
   { icon: '💬', name: 'Slack', desc: 'Team collaboration, bot integration, channels', badge: 'Tools' },
   { icon: '🔗', name: 'Git & GitHub', desc: 'Version control, branching, pull requests', badge: 'DevOps' },
@@ -150,10 +152,51 @@ skills.forEach((s, i) => {
 // ===== PROJECTS DATA =====
 const projects = [
   {
+    name: 'E-Portfolio',
+    desc: 'E-Portfolio is a web-based portfolio platform designed for developers to create and manage their professional profiles. Developers can sign up, showcase their skills, add projects, share experience, and link their GitHub and LinkedIn profiles — all in one place.',
+    tags: ['PHP','HTML5', 'CSS', 'JavaScript'],
+    url: 'https://github.com/Tanishchawla999/Devs_Portfolio',
+    demo:'Pull it from Github and Use it locally & Sorry for the inconvenience.',
+    glow: '#00ffe0'
+  },
+  {
+    name: 'PrepIQ — AI Mock Interview Platform ',
+    desc: 'Developed an AI mock interview platform with secure authentication, company-specific question banks, and real-time performance tracking.',
+    tags: ['React','TypeScript', 'Supabase', 'TanStack Query'],
+    url: 'https://github.com/Tanishchawla999/prepiq-your-ai-interview-coach',
+    demo:'https://prep-iq-dev-buddy.lovable.app',
+    glow: '#00ffe0'
+  },
+  {
+    name: 'WebCritic — AI Website Analysis Tool',
+    desc: 'Built an AI-powered website audit tool analyzing SEO, performance, accessibility, and generating downloadable reports.',
+    tags: ['React','TypeScript', 'Supabase', 'TanStack Query'],
+    url: 'https://github.com/Tanishchawla999/WebCritic-scan',
+    demo:'https://site-aura-scan.lovable.app',
+    glow: '#00ffe0'
+  },
+  {
+    name: 'Portfolio- Had some amazing Animations',
+    desc: 'Built a Portfolio websites which has some amazing animations in it.',
+    tags: ['HTML5','CSS','GSAP','LOCOMOTIVE SCROLL','JS'],
+    url: 'https://github.com/Tanishchawla999/PortFolio_With_Animation',
+    demo:'Pull it from Github and Use it locally & Sorry for the inconvenience.',
+    glow: '#00ffe0'
+  },
+  {
+    name: 'brahmacharya_webApp',
+    desc: 'A mobile-first spiritual web application designed to help individuals fight lust, build self-discipline, and deepen their spiritual practice through the wisdom of the Bhagavad Gita, Premanand Maharaj Ji, and Osho.',
+    tags: ['REACT','HTML5', 'CSS', 'JavaScript'],
+    url: 'https://github.com/Tanishchawla999/brahmacharya_webApp',
+    demo:'Pull it from Github and Use it locally & Sorry for the inconvenience.',
+    glow: '#00ffe0'
+  },
+  {
     name: 'Simon Game',
     desc: 'The Simon Game is a classic electronic memory game that challenges players to remember and reproduce an increasingly long sequence of lights and sounds.',
     tags: ['HTML5', 'CSS', 'JavaScript'],
     url: 'https://github.com/Tanishchawla999/SimonSays-Game.git',
+    demo:'Pull it from Github and Use it locally & Sorry for the inconvenience.',
     glow: '#00ffe0'
   },
   {
@@ -161,6 +204,7 @@ const projects = [
     desc: 'A web application that allows users to post questions, write answers, and comment, similar to Quora. Features user authentication, CRUD operations, and interactive voting.',
     tags: ['EJS', 'JavaScript', 'CSS'],
     url: 'https://github.com/Tanishchawla999/Quora_Blog',
+    demo:'Pull it from Github and Use it locally & Sorry for the inconvenience.',
     glow: '#7b2fff'
   },
   {
@@ -168,6 +212,7 @@ const projects = [
     desc: 'A smart WhatsApp bot using N8N that mimics a real person\'s chatting style with contextual and natural responses — just like chatting with a real person.',
     tags: ['N8N', 'Google Sheets', 'Google Gemini', 'WhatsApp APIs'],
     url: 'https://github.com/Tanishchawla999/WhatsApp_BOT',
+    demo:'Pull it from Github and Use it locally & Sorry for the inconvenience.',
     glow: '#25d366'
   },
   {
@@ -175,6 +220,7 @@ const projects = [
     desc: 'Book your room or rent PGs/flats without any brokerage fees. Especially designed for students who find it hard to secure good PG accommodations.',
     tags: ['HTML5', 'CSS', 'JavaScript'],
     url: 'https://github.com/Tanishchawla999/BOOKMYROOM.git',
+    demo:'Pull it from Github and Use it locally & Sorry for the inconvenience.',
     glow: '#ff9f43'
   },
   {
@@ -182,6 +228,7 @@ const projects = [
     desc: 'A Chrome Extension that lets users switch between light, dark, or custom themes on websites — reducing eye strain and personalizing the browsing experience.',
     tags: ['HTML5', 'CSS', 'JavaScript'],
     url: 'https://github.com/Tanishchawla999/Theme-changer-chromeExtension',
+    demo:'Pull it from Github and Use it locally & Sorry for the inconvenience.',
     glow: '#ff2f7b'
   },
 ];
@@ -201,6 +248,7 @@ projects.forEach((p, i) => {
       <div class="project-desc">${p.desc}</div>
       <div class="project-tags">${p.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}</div>
       <a href="${p.url}" target="_blank" class="project-link">View Code</a>
+      <a href="${p.demo}" target="_blank" class="project-link">Live Demo</a>
     </div>
   `;
   projectsGrid.appendChild(card);
@@ -219,8 +267,9 @@ document.querySelectorAll('.skill-card, .project-card').forEach(el => observer.o
 
 // ===== CURRENTLY LEARNING =====
 const learning = [
-  { icon: '⚛️', name: 'React.js', progress: 25 },
+  { icon: '⚛️', name: 'React.js', progress: 75 },
   { icon: '🤖', name: 'AI / LLMs', progress: 45 },
+  { icon: '📥', name: 'MongoDb', progress: 25 },
 ];
 
 const pillsContainer = document.getElementById('learningPills');
@@ -320,7 +369,7 @@ statsObserver.observe(document.querySelector('.hero-stats'));
     ];
     dir = {x: 1, y: 0};
     nextDir = {x: 1, y: 0};
-    score = 0; level = 1; speedMs = 130;
+    score = 0; level = 1; speedMs = 170;
     particles = []; glowParticles = [];
     special = null;
     spawnFood();
